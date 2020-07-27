@@ -11,22 +11,29 @@ body {
 .title {
   font-weight: bold;
   font-size: 24px;
-  padding-top: 4vh;
+  padding-top: 3vh;
 }
 
 .contents {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  padding-top: 10%;
-  width: 90%;
+  justify-content: center;
+  padding-top: 5%;
+  width: 100%;
+}
+
+.child {
+  flex: 1 1 500px;
+  margin: 5px;
 }
 
 .content-img {
-  width: 50%;
+  text-align: center;
 }
 
 .content-img img {
-  width: 80%;
+  width: 90%;
 }
 
 .detail-title {
@@ -41,38 +48,17 @@ body {
 }
 
 .btn {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .btn-back {
   background-color: #353535;
-  outline: none;
   color: white;
   padding: 20px;
+  font-size: 0.75rem;
 }
 
 .footer {
-  padding-top: 10vh;
+  padding-top: 5vh;
   text-align: center;
-}
-
-@media only screen and (max-width: 1024px) {
-  .contents {
-    width: 100%;
-    margin: 0 auto;
-    flex-wrap: wrap;
-  }
-
-  .content-img {
-    width: 100%;
-    text-align: center;
-  }
-
-  .content-img img {
-    width: 80%;
-  }
-
-  .detail-body {
-    width: 100%;
-  }
 }
