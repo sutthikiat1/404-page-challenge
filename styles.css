@@ -1,0 +1,78 @@
+body {
+  font-family: "Inconsolata", monospace;
+  margin: 0px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 24px;
+  padding-top: 4vh;
+}
+
+.contents {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10%;
+  width: 90%;
+}
+
+.content-img {
+  width: 50%;
+}
+
+.content-img img {
+  width: 80%;
+}
+
+.detail-title {
+  font-size: 5.7vh;
+  font-weight: bold;
+}
+
+.detail-body {
+  width: 50%;
+  font-size: 2vh;
+  font-weight: normal;
+}
+
+.btn {
+  margin-top: 80px;
+}
+
+.btn-back {
+  background-color: #353535;
+  outline: none;
+  color: white;
+  padding: 20px;
+}
+
+.footer {
+  padding-top: 10vh;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .contents {
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  .content-img {
+    width: 100%;
+    text-align: center;
+  }
+
+  .content-img img {
+    width: 80%;
+  }
+
+  .detail-body {
+    width: 100%;
+  }
+}
